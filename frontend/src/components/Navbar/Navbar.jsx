@@ -30,6 +30,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from 'D:/Projects/IndustrialProject/frontend/src/assets/Images/logo.png'
+import axios from 'axios'
 
 
 const NavBar = () => {
