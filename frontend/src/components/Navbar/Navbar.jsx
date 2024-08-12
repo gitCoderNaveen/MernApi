@@ -45,7 +45,7 @@ const NavBar = () => {
     e.preventDefault()
     if (product !== ' ')
       try {
-        const response = await fetch(`http://localhost:7001/datas/getFirmDetails?product=${product}`);
+        const response = await fetch(`https://mern-api-tawny.vercel.app/datas/getFirmDetails?product=${product}`);
         const data = await response.json();
         if (response.ok) {
           setFirmDetails(data);
