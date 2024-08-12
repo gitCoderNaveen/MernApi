@@ -14,7 +14,7 @@ app.use(cors(
     }
 ))
 
-mongoose.connect('mongodb://127.0.0.1:27017/ProductDirectory')
+mongoose.connect('mongodb+srv://naveenbscmca1518:test123@cluster0.cfshq.mongodb.net/ProductDirectory?retryWrites=true&w=majority&appName=Cluster0')
 
 mongoose.connection.on('connected', ()=>{
     console.log('MongoDB successfully connectd')
