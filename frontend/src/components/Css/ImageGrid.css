@@ -1,0 +1,45 @@
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+    cursor:pointer;
+  }
+  
+  .image-item {
+    flex: 1 1 calc(25% - 32px); /* 4 images per row, minus gap */
+    max-width: calc(25% - 32px);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive for tablets */
+  @media (max-width: 768px) {
+    .image-item {
+      flex: 1 1 calc(50% - 16px); /* 2 images per row */
+      max-width: calc(50% - 16px);
+    }
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 480px) {
+    .image-item {
+      flex: 1 1 100%; /* 1 image per row */
+      max-width: 100%;
+    }
+  }
+  
