@@ -30,7 +30,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from 'D:/Projects/IndustrialProject/frontend/src/assets/Images/logo.png'
-import axios from 'axios'
 
 
 const NavBar = () => {
@@ -40,7 +39,6 @@ const NavBar = () => {
   const [btn, setBtn] = useState(false)
   const [isPopup, setIspopup] = useState(false)
 
-  axios.defaults.withCredentials = true;
   const fetchFirmDetails = async (e) => {
     e.preventDefault()
     if (product !== ' ')
